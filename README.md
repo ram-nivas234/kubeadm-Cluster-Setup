@@ -1,10 +1,10 @@
-# kubernetes-
+ kubernetes-
 How to Install k8s in debian based linux ---
 
 Step 1 : Enable IPv4 packet forwarding :-
 To manually enable IPv4 packet forwarding:
 
-# sysctl params required by setup, params persist across reboots
+sysctl params required by setup, params persist across reboots
 cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.ipv4.ip_forward = 1
 EOF
